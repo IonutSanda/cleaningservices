@@ -1,0 +1,11 @@
+::ng-deep {
+  .p-component {
+    width: 80%;
+  }
+
+  .p-tabmenu .p-tabmenu-nav .p-tabmenuitem.p-highlight .p-menuitem-link {
+    background: rgba(0, 0, 205, 0.05);
+    border-color: rgba(0, 0, 205, 0.05);
+    border-radius: 5px;
+  }
+}
