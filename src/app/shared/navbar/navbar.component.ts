@@ -23,18 +23,22 @@ export class NavbarComponent implements OnInit {
       {
         label: 'Servicii',
         icon: 'pi pi-fw pi-cog',
+        routerLink: '/offers',
       },
       {
         label: 'Dotari',
         icon: 'pi pi-fw pi-briefcase',
+        routerLink: '/equipment',
       },
       {
         label: 'Despre noi',
         icon: 'pi pi-fw pi-id-card',
+        routerLink: '/about',
       },
       {
         label: 'Contact',
         icon: 'pi pi-fw pi-book',
+        routerLink: '/contact',
       },
     ];
 
