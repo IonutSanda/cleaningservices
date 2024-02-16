@@ -1,3 +1,4 @@
+import { ButtonModule } from 'primeng/button';
 import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 import { DividerModule } from 'primeng/divider';
@@ -6,7 +7,7 @@ import { TabMenuModule } from 'primeng/tabmenu';
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [TabMenuModule, DividerModule],
+  imports: [TabMenuModule, DividerModule, ButtonModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
 })

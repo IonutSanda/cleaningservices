@@ -1,0 +1,33 @@
+.bg-image {
+  background-image: url(../../../assets/img1.jpg);
+  height: 550px;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 30px;
+  width: 80%;
+  margin: auto;
+}
+
+.glass {
+  backdrop-filter: blur(5px);
+  box-shadow: 20px 20px 50px rgb(0 0 0 / 50%);
+  border-radius: 30px;
+  margin-top: 300px;
+}
+
+.mask {
+  border-radius: 30px;
+  width: 60%;
+  margin: auto;
+}
+
+.hero > img {
+  width: 950px;
+  height: 550px;
+}
+
+.overlay-text {
+  bottom: 0;
+  left: 0;
+}

@@ -1,3 +1,4 @@
+import { offersRoutes } from './core/offers/offers.routes';
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
@@ -27,5 +28,10 @@ export const routes: Routes = [
     path: 'contact',
     loadChildren: () =>
       import('../app/core/contact/contact.routes').then((m) => m.contactRoutes),
+  },
+  {
+    path: 'offer',
+    loadChildren: () =>
+      import('../app/core/offers/offers.routes').then((m) => m.offersRoutes),
   },
 ];
