@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
+import { DividerModule } from 'primeng/divider';
 import { TabMenuModule } from 'primeng/tabmenu';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [TabMenuModule],
+  imports: [TabMenuModule, DividerModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
 })
@@ -17,17 +18,17 @@ export class NavbarComponent implements OnInit {
     this.items = [
       {
         label: 'Acasa',
-        icon: 'pi pi-fw pi-home',
+        icon: 'bi bi-house-door',
         routerLink: '/home',
       },
       {
         label: 'Servicii',
-        icon: 'pi pi-fw pi-cog',
+        icon: 'bi bi-list-check',
         routerLink: '/offers',
       },
       {
         label: 'Dotari',
-        icon: 'pi pi-fw pi-briefcase',
+        icon: 'bi bi-box',
         routerLink: '/equipment',
       },
       {

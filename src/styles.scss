@@ -4,3 +4,12 @@
 @import "primeicons/primeicons.css";
 @import "bootstrap-icons/font/bootstrap-icons.css";
 @import "primeng/resources/themes/lara-light-blue/theme.css";
+
+html:not(i) {
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}

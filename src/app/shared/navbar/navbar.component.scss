@@ -1,11 +1,31 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  height: 60px;
+  width: 60px;
+}
+
 ::ng-deep {
   .p-component {
     width: 80%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .p-tabmenu .p-tabmenu-nav {
+    border: none;
   }
 
   .p-tabmenu .p-tabmenu-nav .p-tabmenuitem.p-highlight .p-menuitem-link {
-    background: rgba(0, 0, 205, 0.05);
-    border-color: rgba(0, 0, 205, 0.05);
-    border-radius: 5px;
+    background: rgba(107, 107, 201, 0.05);
+    border-color: rgba(107, 107, 201, 0.05);
+    border-radius: 15px;
   }
 }
