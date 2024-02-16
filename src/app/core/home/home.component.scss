@@ -17,6 +17,7 @@
 }
 
 .mask {
+  background-color: rgba(0, 0, 0, 0.3);
   border-radius: 30px;
   width: 60%;
   margin: auto;
@@ -30,4 +31,17 @@
 .overlay-text {
   bottom: 0;
   left: 0;
+}
+
+.home-body {
+  width: 80%;
+}
+
+.hero1 {
+  height: 500px;
+  border-radius: 30px;
+}
+
+.wall-text {
+  width: 100%;
 }
