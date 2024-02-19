@@ -15,6 +15,6 @@ export class AppComponent implements OnInit {
   private readonly router = inject(Router);
 
   public ngOnInit(): void {
-    this.router.navigateByUrl('/home');
+    // this.router.navigateByUrl('/home');
   }
 }

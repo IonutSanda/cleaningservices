@@ -1,8 +1,9 @@
 import { ButtonModule } from 'primeng/button';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 import { DividerModule } from 'primeng/divider';
 import { TabMenuModule } from 'primeng/tabmenu';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -12,6 +13,8 @@ import { TabMenuModule } from 'primeng/tabmenu';
   styleUrl: './navbar.component.scss',
 })
 export class NavbarComponent implements OnInit {
+  private readonly router = inject(Router);
+
   public items!: MenuItem[];
   public activeItem!: MenuItem;
 
@@ -45,5 +48,9 @@ export class NavbarComponent implements OnInit {
     ];
 
     this.activeItem = this.items[0];
+  }
+
+  public navigateHome() {
+    this.router.navigate(['/home']);
   }
 }

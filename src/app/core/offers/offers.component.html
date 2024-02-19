@@ -1,1 +1,65 @@
-<p>offers works!</p>
+<div class="wrapper flex flex-column justify-content-center align-items-center">
+  <div class="offer1 flex flex-row align-items-center">
+    <img src="../../../assets/generalcleaning.jpg" alt="generalcleaning" />
+    <div class="wall-text">
+      <div class="text-container flex flex-column">
+        <span class="font-bold text-3xl mb-4">Curatenie generala</span>
+        <span [class.fade]="!showContent">{{ content }}</span>
+      </div>
+      <span
+        [class]="!showContent ? 'read-more' : 'read-less'"
+        class="read-more cursor-pointer"
+        (click)="toggleContent()"
+        >{{ !showContent ? "Citeste mai mult" : "Citeste mai putin" }}</span
+      >
+    </div>
+  </div>
+  <div class="offer2">
+    <img src="" alt="" />
+    <div class="wall-text">
+      <span>Curatenie apartamente/case</span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <div class="offer3">
+    <img src="" alt="" />
+    <div class="wall-text">
+      <span>Curatenie industriala</span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <div class="offer4">
+    <img src="" alt="" />
+    <div class="wall-text">
+      <span>Curatenie de intretinere</span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <div class="offer5">
+    <img src="" alt="" />
+    <div class="wall-text">
+      <span>Curatenie dupa constructii/renovari</span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <div class="offer6">
+    <img src="" alt="" />
+    <div class="wall-text">
+      <span>Curatenie dupa petreceri/evenimente</span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <div class="offer7">
+    <img src="" alt="" />
+    <div class="wall-text">
+      <span>Furnizare solutii si consumabile</span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</div>
